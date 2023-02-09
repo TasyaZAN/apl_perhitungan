@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+
+        <EditText
+            android:id="@+id/blg1"
+            android:layout_width="247dp"
+            android:layout_height="56dp"
+            android:layout_marginTop="16dp"
+            android:hint="Bilangan 1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/blg2"
+            android:layout_width="247dp"
+            android:layout_height="56dp"
+            android:layout_marginTop="84dp"
+            android:hint="Bilangan 2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/hasilnya"
+            android:layout_width="235dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="256dp"
+            android:hint="0"
+            android:textAlignment="center"
+            android:textSize="45dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btntambah"
+            android:layout_width="66dp"
+            android:layout_height="46dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="24dp"
+
+            android:backgroundTint="#000080"
+            android:text="+"
+            android:textColor="#FBFAFA"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:cornerRadius="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/blg2" />
+
+        <Button
+            android:id="@+id/btnkurang"
+            android:layout_width="66dp"
+            android:layout_height="46dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="#000080"
+            android:text="-"
+            android:textColor="#FBFAFA"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:cornerRadius="20dp"
+            app:layout_constraintStart_toEndOf="@+id/btntambah"
+            app:layout_constraintTop_toBottomOf="@+id/blg2" />
+
+        <Button
+            android:id="@+id/btnkali"
+            android:layout_width="66dp"
+            android:layout_height="46dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="#000080"
+            android:text="x"
+            android:textColor="#FBFAFA"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:cornerRadius="20dp"
+            app:layout_constraintStart_toEndOf="@+id/btnkurang"
+            app:layout_constraintTop_toBottomOf="@+id/blg2" />
+
+        <Button
+            android:id="@+id/btnbagi"
+            android:layout_width="66dp"
+            android:layout_height="46dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="#000080"
+            android:text=":"
+            android:textColor="#FBFAFA"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:cornerRadius="20dp"
+            app:layout_constraintStart_toEndOf="@+id/btnkali"
+            app:layout_constraintTop_toBottomOf="@+id/blg2" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvbilangan"
+            android:layout_width="409dp"
+            android:layout_height="399dp"
+            android:layout_marginTop="408dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+
+        <Button
+            android:id="@+id/btnsimpan"
+            android:layout_width="249dp"
+            android:layout_height="46dp"
+
+            android:layout_marginTop="212dp"
+            android:backgroundTint="#5588ee"
+            android:text="SIMPAN"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.506"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/blg2" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
